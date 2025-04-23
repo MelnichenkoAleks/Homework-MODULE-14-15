@@ -78,6 +78,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destroyTime: 10
   _rotateSpeed: 0.35
+  _mover: {fileID: 6772265423581855389, guid: 47721f4aa2f7fb74497ec0e99a2bd9c2, type: 3}
+  _speeding: 3
 --- !u!1 &1531366879701930082
 GameObject:
   m_ObjectHideFlags: 0

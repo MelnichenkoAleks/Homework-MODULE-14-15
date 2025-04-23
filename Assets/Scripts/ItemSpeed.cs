@@ -1,10 +1,20 @@
+using UnityEngine;
+
 public class ItemSpeed : Item
 {
+    [SerializeField] private Mover _mover;
+
+    [SerializeField] private float _speeding;
+
     private string _ItemName = "Item Speed";
     public override string NameItem => _ItemName;
 
-    protected override void ItemAbility()
+    public override void ItemAbility()
     {
-        throw new System.NotImplementedException();
+        if (_mover != null)
+        {
+            _mover.Boost(_speeding);
+            Destroy(gameObject);
+        }
     }
 }

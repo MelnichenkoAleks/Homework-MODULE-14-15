@@ -167,7 +167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3636147375205908043}
   m_Layer: 0
-  m_Name: ItemPoint
+  m_Name: ItemPointHero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,8 +388,13 @@ GameObject:
   - component: {fileID: 4220646646413481916}
   - component: {fileID: 9042087867946780319}
   - component: {fileID: 7752248986870245656}
-  - component: {fileID: 4794475291942396304}
-  - component: {fileID: 8350822629275804450}
+  - component: {fileID: 4833173853410381028}
+  - component: {fileID: 6772265423581855389}
+  - component: {fileID: -6803618195183348640}
+  - component: {fileID: 1419397989370113639}
+  - component: {fileID: -6534650046184644140}
+  - component: {fileID: 2278344352390293272}
+  - component: {fileID: 4639605666083680997}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Untagged
@@ -466,7 +471,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4794475291942396304
+--- !u!114 &4833173853410381028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,12 +480,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 7523433125618437660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d5ac25082d0fad42a7f5b7cd85e02f0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30512c3b2ed9be6478708db6ef6addd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6772265423581855389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523433125618437660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6003bd33e464c54c815574e8b6a397a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 3
+--- !u!114 &-6803618195183348640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523433125618437660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9310a555ba84b84e854c4a8605282ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _rotationSpeed: 400
---- !u!114 &8350822629275804450
+--- !u!114 &1419397989370113639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523433125618437660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c819c2b53f654034f925701f13104455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentHealth: 25
+--- !u!114 &-6534650046184644140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,6 +532,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d98bf4d71b1dca7408aa539f1607b09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemHeroPoint: {fileID: 3636147375205908043}
+--- !u!114 &2278344352390293272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523433125618437660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed191641fd9a1d8429c5459b5db02dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _item:
+  - {fileID: 381992266137095307, guid: 0df712b737602f94b8e319acdb79b79a, type: 3}
+  - {fileID: -3472550027550904135, guid: 6847c62244ea3654ca9feac175c3ca56, type: 3}
+  - {fileID: -3368316157919246237, guid: aa1814b3320c1b748949cd68d815e324, type: 3}
+--- !u!114 &4639605666083680997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7523433125618437660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5c5f4032cf7054384abce16a7fd0f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8446584276186417645

@@ -1,14 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemShot : Item
 {
+    [SerializeField] private Attack _attack;
+    [SerializeField] private float _firePower;
+
     private string _ItemName = "Item Shot";
     public override string NameItem => _ItemName;
 
-    protected override void ItemAbility()
+    public override void ItemAbility()
     {
-        throw new System.NotImplementedException();
+        if (_attack != null)
+        {
+            _attack.Fire(_firePower);
+            Destroy(gameObject);
+        }
     }
 }
