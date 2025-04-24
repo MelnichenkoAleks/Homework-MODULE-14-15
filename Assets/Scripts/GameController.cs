@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.GridLayoutGroup;
 
 public class GameController : MonoBehaviour
 {
@@ -46,6 +47,9 @@ public class GameController : MonoBehaviour
             if (_currentItem)
             {
                 _currentItem.ItemAbility();
+
+                Destroy(_currentItem.gameObject);
+
                 _currentItem = null;
                 _hasItem = false;
             }

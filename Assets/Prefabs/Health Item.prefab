@@ -216,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9ceca5bbd82e24c82d0618014a68a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destroyTime: 10
+  _destroyTime: 50
   _rotateSpeed: 0.35
   _health: {fileID: 1419397989370113639, guid: 47721f4aa2f7fb74497ec0e99a2bd9c2, type: 3}
   _healing: 25

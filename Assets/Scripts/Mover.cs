@@ -6,6 +6,8 @@ public class Mover : MonoBehaviour
 
     private CharacterController _characterController;
 
+    [SerializeField] private ParticleSystem _boostEffect;
+
     private void Awake()
     {
         _characterController = GetComponent<CharacterController>();
@@ -19,6 +21,8 @@ public class Mover : MonoBehaviour
     public void Boost(float amount)
     {
         _speed += amount;
+
+        _boostEffect.Play();
 
         Debug.Log($"√ерой использовал ускорение, текуща€ скорость: {_speed}");
     }

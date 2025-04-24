@@ -32,7 +32,7 @@ public class ItemCollector : MonoBehaviour
             if (itemCollider)
                 itemCollider.enabled = false;
 
-            item.enabled = false;
+            item.HasTaken();
         }
         else
         {

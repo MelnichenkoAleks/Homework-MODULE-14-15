@@ -14,7 +14,6 @@ public class ItemSpeed : Item
         if (_mover != null)
         {
             _mover.Boost(_speeding);
-            Destroy(gameObject);
         }
     }
 }

@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0eaddda7d3888419c5d67db3a89783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _destroyTime: 10
+  _destroyTime: 50
   _rotateSpeed: 0.35
   _mover: {fileID: 6772265423581855389, guid: 47721f4aa2f7fb74497ec0e99a2bd9c2, type: 3}
   _speeding: 3

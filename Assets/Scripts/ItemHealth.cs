@@ -14,7 +14,6 @@ public class ItemHealth : Item
         if (_health != null)
         {
             _health.Heal(_healing);
-            Destroy(gameObject);
         }
     }
 }
