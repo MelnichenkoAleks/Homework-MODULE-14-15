@@ -11,7 +11,7 @@ public class ItemShoot : Item
     private string _ItemName = "Item Shot";
     public override string NameItem => _ItemName;
 
-    public override void ItemAbility()
+    public override void ItemAbility(GameObject owner)
     {
         Bullet bullet = Instantiate(_bulletPrefab, _bulletPrefabPoint.position, _bulletPrefabPoint.rotation);
         bullet.Fire(transform.forward * _shootForce);

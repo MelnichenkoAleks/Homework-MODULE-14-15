@@ -5326,7 +5326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6003bd33e464c54c815574e8b6a397a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 15
   _boostEffect: {fileID: 1789730637537021456}
 --- !u!114 &-6803618195183348640
 MonoBehaviour:
@@ -5353,7 +5353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c819c2b53f654034f925701f13104455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentHealth: 25
+  _currentHealth: 100
   _healEffect: {fileID: 2119797646074284753}
 --- !u!114 &-6534650046184644140
 MonoBehaviour:
@@ -5384,6 +5384,7 @@ MonoBehaviour:
   - {fileID: 381992266137095307, guid: 0df712b737602f94b8e319acdb79b79a, type: 3}
   - {fileID: -3472550027550904135, guid: 6847c62244ea3654ca9feac175c3ca56, type: 3}
   - {fileID: -3368316157919246237, guid: aa1814b3320c1b748949cd68d815e324, type: 3}
+  _owner: {fileID: 0}
 --- !u!1 &8446584276186417645
 GameObject:
   m_ObjectHideFlags: 0

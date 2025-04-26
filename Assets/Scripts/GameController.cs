@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.UI.GridLayoutGroup;
 
 public class GameController : MonoBehaviour
 {
     [SerializeField] private List<Item> _item;
+
+    [SerializeField] private GameObject _owner;
 
     private Item _currentItem;
 
@@ -46,7 +47,7 @@ public class GameController : MonoBehaviour
         {           
             if (_currentItem)
             {
-                _currentItem.ItemAbility();
+                _currentItem.ItemAbility(_owner);
 
                 Destroy(_currentItem.gameObject);
 

@@ -35,7 +35,7 @@ public abstract class Item : MonoBehaviour
         return;
     }
 
-    public abstract void ItemAbility();
+    public abstract void ItemAbility(GameObject owner);
 
     public void HasTaken()
     {
