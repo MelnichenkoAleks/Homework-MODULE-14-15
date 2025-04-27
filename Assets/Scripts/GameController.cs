@@ -26,12 +26,17 @@ public class GameController : MonoBehaviour
             {
                 if (item != null)
                 {
-                    _itemCollector.Take(item.NameItem);
-                    _itemCollector.AttachItemToHeroPoint(item);
-
-                    _currentItem = item;
-
-                    _hasItem = true;
+                    if (item.CanUse(_owner))
+                    {
+                        _itemCollector.Take(item.ItemName);
+                        _itemCollector.AttachItemToHeroPoint(item);
+                        _currentItem = item;
+                        _hasItem = true;
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Персонаж не может использовать {item.ItemName}.");
+                    }
                 }
             }
         }
@@ -47,7 +52,7 @@ public class GameController : MonoBehaviour
         {           
             if (_currentItem)
             {
-                _currentItem.ItemAbility(_owner);
+                _currentItem.Use(_owner);
 
                 Destroy(_currentItem.gameObject);
 

@@ -4,10 +4,7 @@ public class ItemHealth : Item
 {
     [SerializeField] private float _healing;
 
-    private string _ItemName = "Item Health";
-    public override string NameItem => _ItemName;
-
-    public override void ItemAbility(GameObject owner)
+    public override void Use(GameObject owner)
     {
         Health _health = owner.GetComponent<Health>();
 

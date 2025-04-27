@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destroyTime: 50
   _rotateSpeed: 0.35
+  _itemName: "\u0410\u0442\u0430\u043A\u0443\u044E\u0449\u0438\u0439 \u043F\u043E\u0441\u043E\u0445"
   _bulletPrefab: {fileID: -6174519832925177384, guid: 88f586ec898888442b8801dc446ee2ff,
     type: 3}
   _bulletPrefabPoint: {fileID: 1064745595866051261}

@@ -78,7 +78,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destroyTime: 50
   _rotateSpeed: 0.35
-  _mover: {fileID: 6772265423581855389, guid: 47721f4aa2f7fb74497ec0e99a2bd9c2, type: 3}
+  _itemName: "\u041C\u043E\u043B\u043D\u0438\u044F \u0443\u0441\u043A\u043E\u0440\u0435\u043D\u0438\u044F"
   _speeding: 3
 --- !u!1 &1531366879701930082
 GameObject:

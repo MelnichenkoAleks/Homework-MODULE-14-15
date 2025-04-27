@@ -218,7 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _destroyTime: 50
   _rotateSpeed: 0.35
-  _health: {fileID: 1419397989370113639, guid: 47721f4aa2f7fb74497ec0e99a2bd9c2, type: 3}
+  _itemName: "\u0417\u0435\u043B\u044C\u0435 \u0438\u0441\u0446\u0435\u043B\u0435\u043D\u0438\u044F"
   _healing: 25
 --- !u!65 &6717070289473669334
 BoxCollider:

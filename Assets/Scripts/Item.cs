@@ -6,17 +6,18 @@ public abstract class Item : MonoBehaviour
 
     [SerializeField] private float _rotateSpeed;
 
+    [SerializeField] private string _itemName;
+    public string ItemName => _itemName;
+
     private Vector3 _defaultPosition;
 
     private float _time;
 
     private bool _isTake;
 
-    public abstract string NameItem { get; }
-
     private void Awake()
     {
-        _defaultPosition = transform.position;        
+        _defaultPosition = transform.position;
     }
 
     private void Update()
@@ -32,12 +33,16 @@ public abstract class Item : MonoBehaviour
             if (_time >= _destroyTime)
                 Destroy(gameObject);
         }
-        return;
     }
 
-    public abstract void ItemAbility(GameObject owner);
+    public abstract void Use(GameObject owner);
 
-    public void HasTaken()
+    public bool CanUse(GameObject owner)
+    {
+        return owner.GetComponent<MoveController>() != null;
+    }
+
+    public void Take()
     {
         _isTake = true;
     }

@@ -8,12 +8,11 @@ public class ItemShoot : Item
 
     [SerializeField] private float _shootForce;
 
-    private string _ItemName = "Item Shot";
-    public override string NameItem => _ItemName;
-
-    public override void ItemAbility(GameObject owner)
+    public override void Use(GameObject owner)
     {
-        Bullet bullet = Instantiate(_bulletPrefab, _bulletPrefabPoint.position, _bulletPrefabPoint.rotation);
-        bullet.Fire(transform.forward * _shootForce);
+        {
+            Bullet bullet = Instantiate(_bulletPrefab, _bulletPrefabPoint.position, _bulletPrefabPoint.rotation);
+            bullet.Fire(transform.forward * _shootForce);
+        }
     }
 }

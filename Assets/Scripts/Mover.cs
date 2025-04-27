@@ -20,6 +20,12 @@ public class Mover : MonoBehaviour
 
     public void Boost(float amount)
     {
+        if (amount < 0)
+        {
+            Debug.LogError("Отрицательное значение быть не может");
+            return;
+        }
+
         _speed += amount;
 
         _boostEffect.Play();
